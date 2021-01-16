@@ -17,10 +17,6 @@ client.on("message", function(message) {
   const commandBody = message.content.slice(prefix.length);
   const args = commandBody.split(' ');
   const command = args.shift().toLowerCase();
-
-             
-});
-
 static void UpdatePresence()
 {
     DiscordRichPresence discordPresence;
@@ -37,5 +33,9 @@ static void UpdatePresence()
     discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
     Discord_UpdatePresence(&discordPresence);
 }
+             
+});
+
+
 
 client.login(process.env.TOKEN);
